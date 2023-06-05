@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="./style/estilo.css">
+  <script src="./src/index.js" defer></script>
+</head>
+<body>
+  <div class="formularioLogin">
+     <h1>Iniciar Sesion</h1>
+     <div>
+        <form>
+          <div>
+            <input id="email" type="text" placeholder="Correo electronico...">
+          </div>
+          <div>
+            <input id= "password" type="password" placeholder="contraseña...">
+          </div>
+          <div>
+            <button class="btn-add">Login</button>
+          </div>
+        </form>
+     </div>
+   </div>
+
+   <div class="formularioRegister" style="display:none">
+    <h1>Iniciar Sesion</h1>
+    <div>
+       <form>
+        <div>
+          <input id= "nombreUser" type="text" placeholder="nombre...">
+        </div>
+        <div>
+           <input id="emailReg" type="text" placeholder="Correo electronico...">
+         </div>
+         <div>
+           <input id= "passwordReg" type="password" placeholder="contraseña...">
+         </div>
+         <div>
+           <button class="btn-add">Login</button>
+         </div>
+       </form>
+    </div>
+  </div>
+ <div class="seccionConsultas" style="display:none">
+    <h2>Listado Albums / Artistas</h2>
+    <div class="ListadoBotones" style="display:none">
+      <div>
+        <button class="get_artistas">Consultar Artistas</button>
+      </div>
+      <div>
+        <button class="get_albums">Consultar Albums</button>
+      </div>
+
+    </div >
+    <div class="ListadoAlbums" style="display:none">
+      <table>
+          <thead>
+             <tr>
+               <th class="titulo">Nombre</th>
+               <th class="year">Año Lanzamiento</th>
+             </tr>
+          </thead>
+          <tbody class="bodyAlb">
+          </tbody>
+      </table>
+    </div >
+    <div class="ListadoArtistas" style="display:none">
+      <table>
+        <thead>
+           <tr>
+             <th class="titulo">Nombre</th>
+             <th class="year">Año Lanzamiento</th>
+           </tr>
+        </thead>
+        <tbody class="bodyArt">
+        </tbody>
+    </table>
+  </div >
+
+  </div>
+</body>
+</html>
