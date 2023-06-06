@@ -106,7 +106,9 @@ const deleteAlbum = async(req, res) => {
             return res.status(404).json({message: "El Id de este albuma no existe"})
         }
         //console.log(deletedAlbum.imagen);
-        deleteFile(deletedAlbum.imagen)
+        if (deletedAlbum.imagen)
+           deleteFile(deletedAlbum.imagen)
+           
         return res.status(200).json(deletedAlbum)
     } catch (error) { 
         return res.status(500).json(error)

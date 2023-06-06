@@ -1,26 +1,33 @@
 body {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* height: 100vh; */
     background-color: rgb(0, 89, 90);
     font-family: Arial, sans-serif;
   }
 
+  .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .container {
     width: 400px;
     padding: 20px 80px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  }
+  }  
 
- 
-  form {
+  .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }  
+  .divinput {
+    width: 300px;
+  }
 
   h2 {
     text-align: center;
@@ -44,8 +51,27 @@ body {
     width: 100%;
     margin: 5px;
     padding: 10px;
+  }
+
+  .inputborder {
     border: 1px solid #ccc;
     border-radius: 4px;
+  }
+
+  .errorMsg{
+    background-color: rgb(0, 89, 90);
+    border: 0 solid rgb(0, 89, 90);
+    color: white;
+  }
+  .errorMsg1{
+    background-color: rgb(0, 89, 90);
+    border: 0 solid rgb(0, 89, 90);
+    color: white;
+  }
+  .numPaginas {
+    background-color: rgb(0, 89, 90);
+    border: 0 solid rgb(0, 89, 90);
+    color: white;
   }
 
   button {
@@ -136,5 +162,17 @@ table, th, td {
   margin: 5px;
 }
 .PaginaAnterior {
+  margin: 5px;
+}
+.btn-add {
+  margin: 5px;
+}
+.btn-registro{
+  margin: 5px;
+}
+.btn-add1{
+  margin: 5px;
+}
+.cierreSesion1{
   margin: 5px;
 }

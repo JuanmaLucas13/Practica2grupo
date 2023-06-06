@@ -6,40 +6,47 @@
   <script src="./src/index.js" defer></script>
 </head>
 <body>
+   <!-- Formulario de login -->
    <div class="formularioLogin">
      <h1>Iniciar Sesion</h1>
-     <div>
-        <form>
-          <div>
-            <input id="email" type="text" placeholder="Correo electronico...">
+     <div class="contenedor">
+        <form >
+          <div class="divinput">
+            <input type="text" id="email" class= "inputborder" placeholder="Correo electronico...">
           </div>
-          <div>
-            <input id= "password" type="password" placeholder="contraseña...">
+          <div class="divinput">
+            <input type="password" id= "password" class= "inputborder" placeholder="contraseña...">
           </div>
-          <div>
+          <div class="contenedor">
             <button class="btn-add">Login</button>
+            <button class="btn-registro">Registrar Usuario</button>
+          </div>
+          <div class="divinput">
+            <input  type="text" disabled="disabled" class= "errorMsg">
           </div>
         </form>
      </div>
    </div>
 
+   <!-- Formulario de registro -->
    <div class="formularioRegister" style="display:none">
-     <h1>Iniciar Sesion</h1>
-     <div>
+     <h1>Registrar Usuario</h1>
+     <div class="contenedor">
        <form>
-        <div>
-          <input id= "nombreUser" type="text" placeholder="nombre...">
-        </div>
-        <div>
+        <div class="divinput">
            <input id="emailReg" type="text" placeholder="Correo electronico...">
          </div>
-         <div>
+         <div class="divinput">
            <input id= "passwordReg" type="password" placeholder="contraseña...">
          </div>
-         <div>
-           <button class="btn-add">Login</button>
+         <div class="contenedor">
+          <button class="cierreSesion1">Volver</button>
+          <button class="btn-add1">Darme de Alta</button>
          </div>
-       </form>
+         <div class="divinput">
+          <input  type="text" disabled="disabled" class= "errorMsg1">
+        </div>
+     </form>
      </div>
    </div>
 
@@ -73,9 +80,10 @@
      </table>
      <div class="btnPaginas">
        <button class="PaginaAnterior">Pagina Anterior</button>
+       <input class="numPaginas"/>
        <button class="siguientePagina">Pagina Siguiente</button>
      </div>
-     <div>
+     <div class="contenedor">
       <button class="post_album">Crear Nuevo Album</button>
      </div>
    </div >
@@ -93,10 +101,15 @@
        <tbody class="bodyArt">
        </tbody>
      </table>
-     <div>
+     <div class="contenedor">
       <button class="post_artista">Crear Nuevo Artista</button>
      </div>
    </div >
+  </div>
+
+  <!-- Boton de Logout -->
+  <div class="contenedor">
+    <button class="cierreSesion">Logout</button>
   </div>
 
 </body>
