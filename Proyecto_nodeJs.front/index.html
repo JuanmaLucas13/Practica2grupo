@@ -6,7 +6,7 @@
   <script src="./src/index.js" defer></script>
 </head>
 <body>
-  <div class="formularioLogin">
+   <div class="formularioLogin">
      <h1>Iniciar Sesion</h1>
      <div>
         <form>
@@ -24,8 +24,8 @@
    </div>
 
    <div class="formularioRegister" style="display:none">
-    <h1>Iniciar Sesion</h1>
-    <div>
+     <h1>Iniciar Sesion</h1>
+     <div>
        <form>
         <div>
           <input id= "nombreUser" type="text" placeholder="nombre...">
@@ -40,44 +40,64 @@
            <button class="btn-add">Login</button>
          </div>
        </form>
-    </div>
-  </div>
- <div class="seccionConsultas" style="display:none">
-    <h2>Listado Albums / Artistas</h2>
-    <div class="ListadoBotones" style="display:none">
-      <div>
+     </div>
+   </div>
+
+   <!-- seccion de botones de consulta -->
+   <div class="seccionConsultas" style="display:none">
+   <h2>Listado Albums / Artistas</h2>
+   <div class="ListadoBotones" style="display:none">
+     <div>
         <button class="get_artistas">Consultar Artistas</button>
-      </div>
-      <div>
+     </div>
+     <div>
         <button class="get_albums">Consultar Albums</button>
-      </div>
+     </div>
+     <div>
+        <button class="get_albumspag">Cons.Albums paginas</button>
+     </div>
+   </div >
 
-    </div >
-    <div class="ListadoAlbums" style="display:none">
-      <table>
-          <thead>
-             <tr>
-               <th class="titulo">Nombre</th>
-               <th class="year">Año Lanzamiento</th>
-             </tr>
-          </thead>
-          <tbody class="bodyAlb">
-          </tbody>
-      </table>
-    </div >
-    <div class="ListadoArtistas" style="display:none">
-      <table>
+   <!-- seccion de Albums -->
+   <div class="ListadoAlbums" style="display:none">
+     <table>
         <thead>
-           <tr>
-             <th class="titulo">Nombre</th>
-             <th class="year">Año Lanzamiento</th>
-           </tr>
+          <tr>
+            <th class="titulo">Nombre</th>
+            <th class="year">Año Lanzamiento</th>
+            <th class="opciones">Opciones</th>
+          </tr>
         </thead>
-        <tbody class="bodyArt">
+        <tbody class="bodyAlb">
         </tbody>
-    </table>
-  </div >
+     </table>
+     <div class="btnPaginas">
+       <button class="PaginaAnterior">Pagina Anterior</button>
+       <button class="siguientePagina">Pagina Siguiente</button>
+     </div>
+     <div>
+      <button class="post_album">Crear Nuevo Album</button>
+     </div>
+   </div >
 
+   <!-- seccion de listado de artistas -->
+   <div class="ListadoArtistas" style="display:none">
+     <table>
+       <thead>
+         <tr>
+           <th class="titulo">Nombre</th>
+           <th class="year">Año Lanzamiento</th>
+           <th class="opciones">Opciones</th>
+         </tr>
+       </thead>
+       <tbody class="bodyArt">
+       </tbody>
+     </table>
+     <div>
+      <button class="post_artista">Crear Nuevo Artista</button>
+     </div>
+   </div >
   </div>
+
 </body>
 </html>

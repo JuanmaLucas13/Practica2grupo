@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
-    background-color: lightgrey;
+    background-color: rgb(0, 89, 90);
     font-family: Arial, sans-serif;
   }
 
@@ -80,16 +80,43 @@ table, th, td {
 }
 
 .year {
-    width: 100px;
+    width: 200px;
     background-color: darkgreen;
-    color: white;;
-    }
+    color: white;
+}
 
+.opciones {
+   width: 75px;
+   background-color: darkgreen;
+   color: white;;
+}
+
+.opcImagen {
+   width: 20px;
+   height: 20px;
+   margin: 5px;
+}
+  
 .pares{
     background-color: grey;
  }    
+ .impares{
+  background-color: lightgrey;
+}    
 
 .ListadoBotones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btnPaginas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.columnaImagen {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -100,5 +127,14 @@ table, th, td {
 }
 
 .get_albums {
+  margin: 5px;
+}
+.get_albumspag {
+  margin: 5px;
+}
+.siguientePagina {
+  margin: 5px;
+}
+.PaginaAnterior {
   margin: 5px;
 }

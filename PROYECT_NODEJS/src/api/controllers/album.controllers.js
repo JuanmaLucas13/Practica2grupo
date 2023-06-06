@@ -43,6 +43,7 @@ const getAlbumPaginado = async(req,res) => {
         const skip = (page - 1) * limit;
 
         const allAlbums = await album.find().skip(skip).limit(limit);
+
         const response = {
             info: {
                 numAlbums: numAlbums,
